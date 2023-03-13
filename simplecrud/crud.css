@@ -1,0 +1,78 @@
+
+:root{
+    --color-dark: #444444;
+}
+
+body {
+    font-family: monospace;
+    background-color: var(--color-dark);
+    color: #fff;
+
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.content {  
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.content--add-item {
+    display: flex;
+    /* align-items: center; */
+    flex-wrap: wrap;
+    gap: 1rem;
+
+}
+
+#input--new-task,
+#btn--new-task {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 1rem;
+    background-color: #fff;
+    padding: 0.7rem;
+}
+
+#input--new-task {
+    width: 20rem;
+}
+
+#btn--new-task {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+    #btn--new-task:hover {
+        background-color: #3a3838;
+        cursor: pointer;
+    }
+
+
+#to-do-list {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    gap: 1.5rem;
+}
+
+#to-do-list li {
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 1.4rem;
+    list-style-type: none;
+    text-transform: capitalize;
+}
+
+.content--body {
+  height: 400px;
+  width: 100%;
+  overflow: scroll;
+}

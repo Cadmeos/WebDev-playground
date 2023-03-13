@@ -1,0 +1,36 @@
+* {
+    text-decoration: none;
+    background-color: #16161d;
+    font-size: 1.2rem;
+    font-family: monospace;
+
+}
+
+.head {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+
+a {
+    position: relative;
+}
+
+a::after {
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: white;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+a:hover::after {
+    width: 100%;
+}
+

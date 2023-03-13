@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <script src="crud.js"></script>
+    <title>Simple CRUD</title>
+</head>
+<body>
+    <h1>A se fazer</h1>
+    <div class="content">
+        <div class="content--add-item">
+            <input type="text" id="input--new-task" placeholder="Insira sua tarefa">
+            <button onclick="newTask()" id="btn--new-task" title="Adicione uma tarefa">+</button>
+            <!-- input, botao -->
+        </div>
+
+        <div class="content--body">
+            <ul id="to-do-list"> <!-- lists -->
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
